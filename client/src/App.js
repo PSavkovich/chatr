@@ -51,6 +51,7 @@ class App extends Component {
   onTabVisibilityChange = () => {
     if (document.visibilityState === "visible" && this.state.intervalId) {
       clearInterval(this.state.intervalId);
+      this.setState({ intervalId: null });
       document.title = "chatr";
       if (this.state.tabIndex === 0) {
         this.setState({ newMessages: 0 });
