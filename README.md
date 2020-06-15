@@ -22,7 +22,13 @@ $ cd client && npm install && cd ../server && npm install
 From the top-level directory:
 
 ```console
-$ cd server && npm run dev
+$ cd server && npm start
+```
+
+And in a different console:
+
+```console
+$ cd client && npm start
 ```
 
 ## Feature checklist
